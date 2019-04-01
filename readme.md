@@ -1,18 +1,24 @@
+# Intro
+
+This repo serves as a reference for myself, since I almost never write APIs. 
+
 ## Local run
 
-You can't use the usual `node app.js` because the code is in ES6. To successfully run, compile with `babel-node` wchih will compile it to ES65:
+You can't use the usual `node app.js` because the code is in ES6. To successfully run, compile with `babel-node` which will compile it to ES65:
 
 ```
 node_modules/.bin/babel-node app.js
 ```
 
-## Installs
+## `npm` Installs
 
 * *express* - Some kind of Node.js framework?
 * *babel-cli* - Compiles ES6 code down to ES5 for older browsers
 * *babel-preset-es2015* - For ES6 features and their ES5 equivalent
 * *nodemon* - For hot reload during development. Include this line inside `package.json`: `"start": "node_modules/.bin/nodemon app.js --exec babel-node --"`
 * *body-parser* - parses incoming JSONs into `request.body`
+
+Use [Postman](https://www.getpostman.com) as an API development environment.
 
 ## Response codes
 * 2xx - all okay
